@@ -8,7 +8,7 @@ SCREEN_WIDTH, SCREEN_HEIGHT = 800, 600                          # Declaring the 
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 BLUE = (0, 0, 255)
-ROBOT_RADIUS = 20
+ROBOT_RADIUS = 10
 PILLAR_WIDTH = 200
 PILLAR_HEIGHT = 300
 PILLAR_TOP_LEFT = (SCREEN_WIDTH // 2 - PILLAR_WIDTH // 2, SCREEN_HEIGHT // 2 - PILLAR_HEIGHT // 2)
@@ -134,7 +134,6 @@ def main():
         if (abs(robot.x - target.x) < MOVEMENT_SPEED and abs(robot.y - target.y) < MOVEMENT_SPEED):
             reached_center = True
 
-        # Update the display
         pygame.display.flip()
 
         # Cap the frame rate
